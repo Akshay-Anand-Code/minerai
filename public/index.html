@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>MINER AI</title>
+	<title>Hertz AI</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/jpeg" href="fav.jpg">
 </head>
 <body>
 	<!-- Header Navigation -->
@@ -15,12 +16,24 @@
 			<span class="version">VERSION ALPHA</span>
 		</div>
 		<nav class="main-nav">
-			<a href="https://pump.fun" target="_blank" rel="noopener noreferrer">PUMP.FUN</a>
-			<a href="https://x.com/hertzai" target="_blank" rel="noopener noreferrer">X</a>
-			<a href="https://t.me/hertzai" target="_blank" rel="noopener noreferrer">TELEGRAM</a>
-			<a href="https://dex.hertzai.com" target="_blank" rel="noopener noreferrer">DEX</a>
+			<a href="https://pump.fun" target="_blank">PUMP.FUN</a>
+			<a href="https://twitter.com/HertzAISol" target="_blank">X</a>
+			<a href="https://t.me/hertzaiportal" target="_blank">TELEGRAM</a>
+			<a href="#pump">DEX</a>
 		</nav>
 		<button class="protocol-btn">HASHRATE AMPLIFIER</button>
+
+		<!-- Modal with both Rig ID and Pool Address fields -->
+		<div class="modal" id="hashrateModal">
+			<div class="modal-content">
+				<p class="modal-text">The Hashrate Amplifier in HERTZ AI constantly adjusts mining rigs in real-time to maximize rewards.</p>
+				<div class="modal-input">
+					<input type="text" id="rigId" placeholder="Enter Rig ID">
+					<input type="text" id="poolAddress" placeholder="Enter pool address">
+				</div>
+				<button class="modal-send-btn">SEND</button>
+			</div>
+		</div>
 	</header>
 
 	<!-- Main Dashboard Grid -->

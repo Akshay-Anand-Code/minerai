@@ -181,4 +181,26 @@ new TerminalOutput();
 document.addEventListener('DOMContentLoaded', () => {
     console.log("DOM loaded, initializing terminal");
     new TerminalOutput();
+});
+
+// Add this to your existing JavaScript
+document.querySelector('.protocol-btn').addEventListener('click', function() {
+    document.getElementById('hashrateModal').style.display = 'block';
+});
+
+document.querySelector('.modal-send-btn').addEventListener('click', function() {
+    const address = document.getElementById('poolAddress').value;
+    if(address) {
+        // Handle the pool address submission here
+        console.log('Pool address submitted:', address);
+    }
+    document.getElementById('hashrateModal').style.display = 'none';
+});
+
+// Close modal when clicking outside
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('hashrateModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
 }); 

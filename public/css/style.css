@@ -526,4 +526,54 @@ body {
     inset: 0;
     background: linear-gradient(0deg, rgba(0, 255, 0, 0.1), transparent);
     pointer-events: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 20, 0, 0.95);
+    border: 1px solid #00ff00;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+.modal-content {
+    color: #00ff00;
+    font-family: monospace;
+}
+
+.modal-text {
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.modal-input input {
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 20, 0, 0.8);
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    font-family: monospace;
+    margin-bottom: 15px;
+}
+
+.modal-send-btn {
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    cursor: pointer;
+    font-family: monospace;
+    transition: all 0.3s ease;
+}
+
+.modal-send-btn:hover {
+    background: rgba(0, 255, 0, 0.2);
 } 
