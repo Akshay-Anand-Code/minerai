@@ -1,0 +1,63 @@
+.terminal {
+    background: transparent;
+    font-family: 'Courier New', monospace;
+    height: 200px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-output {
+    flex-grow: 1;
+    overflow-y: auto;
+    color: #00ff00;
+    padding: 10px;
+}
+
+.terminal-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid rgba(21, 225, 213, 0.1);
+}
+
+.prompt {
+    color: #00ff00;
+    margin-right: 10px;
+}
+
+.terminal-input-field {
+    background: transparent;
+    border: none;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+}
+
+/* Message styling */
+.user-input {
+    color: #00ff00;
+    margin: 5px 0;
+}
+
+.ai-response {
+    color: rgba(21, 225, 213);
+    margin: 5px 0;
+    white-space: pre-wrap;
+}
+
+.error {
+    color: #ff0000;
+    margin: 5px 0;
+}
+
+.system-message {
+    color: #F1C232;
+    margin: 5px 0;
+}
+
+.loading {
+    color: #ffd700;
+    margin: 5px 0;
+} 

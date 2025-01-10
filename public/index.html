@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MINER AI</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Header Navigation -->
+	<header class="main-header">
+		<div class="logo">
+			<span class="icon">◉</span>
+			MINER AI OS
+			<span class="version">VERSION ALPHA</span>
+		</div>
+		<nav class="main-nav">
+			<a href="#roadmap">ROADMAP</a>
+			<a href="#terms">TERMS</a>
+			<a href="#about">ABOUT</a>
+			<a href="#pump">PUMP.FUN</a>
+		</nav>
+		<button class="protocol-btn">AI CREATION PROTOCOL</button>
+	</header>
+
+	<!-- Main Dashboard Grid -->
+	<div class="dashboard-grid">
+		<!-- Sentiment/Visualization Panel -->
+		<div class="panel sentiment">
+			<div class="panel-header">
+				<span>SENTIMENT</span>
+				<span class="status">ACTIVE</span>
+			</div>
+			<div class="mining-stats-container">
+				<div class="gpu-stats">
+					<div class="gpu-header">GPU CLUSTER STATUS</div>
+					<div id="gpuList" class="gpu-list"></div>
+				</div>
+				
+				<div class="sentiment-video-container">
+					<video id="sentimentVideo" autoplay loop muted playsinline>
+						<source src="sentiment.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="performance-metrics">
+					<div class="metric-row">
+						<span>TOTAL HASHRATE:</span>
+						<span id="totalHashrate" class="value">0 MH/s</span>
+					</div>
+					<div class="metric-row">
+						<span>NETWORK DIFFICULTY:</span>
+						<span id="networkDifficulty" class="value">0</span>
+					</div>
+					<div class="metric-row">
+						<span>POWER CONSUMPTION:</span>
+						<span id="powerConsumption" class="value">0 W</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Processes Panel -->
+		<div class="panel processes">
+			<div class="panel-header">
+				<span>PROCESSES</span>
+				<span class="status running">RUNNING</span>
+			</div>
+			<div class="process-list">
+				<div class="process">Initializing terminal...</div>
+				<div class="process">Parsing request...</div>
+				<div class="process">Unpacking modules...</div>
+			</div>
+			<div class="process-gif">
+				<img src="process.gif" alt="Process Animation">
+			</div>
+		</div>
+
+		<!-- Data Panel -->
+		<div class="panel data">
+			<div class="panel-header">
+				<span>DATA</span>
+				<span class="status">LOADING...</span>
+			</div>
+			<div class="data-content">
+				<div class="timer">00:00:24:46</div>
+				<div class="video-container">
+					<video id="dataVideo" autoplay loop muted playsinline>
+						<source src="data.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+
+		<!-- Seed Panel -->
+		<div class="panel seed">
+			<div class="panel-header">
+				<span>SEED</span>
+				<span class="status">NO DATA</span>
+			</div>
+			<div class="seed-content">
+				<span class="no-data">— NO DATA —</span>
+			</div>
+		</div>
+
+		<!-- Terminal Panel -->
+		<div class="panel terminal">
+			<div class="panel-header">
+				<span>TERMINAL</span>
+				<span class="status">AWAITING INPUT</span>
+			</div>
+			<div class="terminal-content">
+				<div class="ascii-logo" id="asciiLogo"></div>
+				<div class="hash">CA: 511nSGsEQ1uGwFRSBRuG5ip1DeemqUofzy2V18UDpump</div>
+				<div class="system-message">Initializing AI containment system...</div>
+				<div class="separator">------------------------------------------</div>
+				<div class="status-message">INTERFACE READY</div>
+				<div class="command-hint">Load available AI constructs with <span class="command">list</span>.</div>
+				<div class="command-hint">Enter <span class="command">help</span> for a list of commands.</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/mining-stats.js"></script>
+	<script src="js/terminal.js"></script>
+</body>
+</html>
